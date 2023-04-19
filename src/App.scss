@@ -1,10 +1,31 @@
-$ery-ark-ray: hsl(0, 0%, 17%);
+$very-dark-ray: hsl(0, 0%, 17%);
 $dark-gray: hsl(0, 0%, 59%);
 
 
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
+}
+
+.App {
+  h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+  }
+
+
+  width: 100vw;
+  height: 40rem;
+  .top-app {
+    background-image: url(/pattern-bg-mobile.png);
+    padding: 1.5rem 2rem 0;
+  }
+}
+
+.ip-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }

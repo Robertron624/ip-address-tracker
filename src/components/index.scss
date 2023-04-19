@@ -1,0 +1,56 @@
+$input-radius: 10px;
+$very-dark-ray: hsl(0, 0%, 17%);
+$dark-gray: hsl(0, 0%, 59%);
+
+form {
+
+    display: flex;
+    justify-content: center;
+
+    label {
+        font-size: 0;
+    }
+
+    input {
+        height: 36px;
+        border-radius: $input-radius 0 0 $input-radius;
+        background-color: white;
+        width: 100%;
+    }
+
+    button[type="submit"] {
+        border-radius: 0 $input-radius $input-radius 0;
+        padding: 0 .8rem;
+    }
+
+    button {
+        background-color: black;
+    }
+}
+
+.container {
+    background-color: white;
+    padding: 1rem 1rem;
+    border-radius: $input-radius;
+    ul {
+        padding: 0;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        border-radius: $input-radius;
+
+        li {
+            span {
+                color: $dark-gray;
+                font-size: .65rem;
+                font-weight: 600;
+            }
+
+            .content {
+                font-weight: 700;
+                color: black;
+            }
+        }
+    }
+}
