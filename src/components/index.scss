@@ -17,7 +17,10 @@ form {
         background-color: white;
         width: 100%;
         color: $very-dark-gray;
+        padding-left: 1rem;
+        font-family: 'Rubik', sans-serif;
     }
+
 
     button[type="submit"] {
         border-radius: 0 $input-radius $input-radius 0;
@@ -33,6 +36,9 @@ form {
     background-color: white;
     padding: 1rem 1rem;
     border-radius: $input-radius;
+    position: absolute;
+    z-index: 2;
+    top: 50%;
     ul {
         padding: 0;
         list-style: none;
