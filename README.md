@@ -33,7 +33,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Solution URL](https://github.com/Robertron624/ip-address-tracker)
 - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ## My process
@@ -43,12 +43,12 @@ Users should be able to:
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
 - [Saas](https://sass-lang.com/) - For styles
 - [Ipify API](https://geo.ipify.org/) - for IP address data
 - [Leaflet](https://leafletjs.com/) - for map
+- [React Leaflet](https://react-leaflet.js.org/) - for map in React
 - [axios](https://www.npmjs.com/package/axios) - for API calls
 
 ### What I learned
@@ -87,15 +87,13 @@ Use this section to outline areas that you want to continue focusing on in futur
 ### Useful resources
 
 - [React Reusable API Calls With Custom Hooks](https://betterprogramming.pub/react-reusable-api-calls-with-custom-hooks-typescript-obviously-a62fda7df1b6) - This helped me to create an easier way to make API calls in React. I'd recommend it to anyone still learning this concept.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [react-leaflet documentation](https://react-leaflet.js.org/docs/start-setup/) - This is the official documentation for react-leaflet. I'd recommend it to anyone who wants to learn how to use this library.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
+- Personal Website - [Robert Ramirez](https://robert-ramirez.netlify.app)
+- Frontend Mentor User- [@Robertron624](https://www.frontendmentor.io/profile/Robertron624)
+- Twitter - [@robertdowny](https://www.twitter.com/robertdowny)
 
 ## Acknowledgments
 
