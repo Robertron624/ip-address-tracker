@@ -3,6 +3,7 @@ import axios from "axios";
 import "./App.scss";
 import IpForm from "./components/IpForm";
 import IpDetails from "./components/IpDetails";
+import { UseIp } from "./hooks/useIp";
 
 const API_KEY = import.meta.env.VITE_IPIFY_API_KEY;
 
@@ -10,22 +11,11 @@ const BASE_URL = `https://geo.ipify.org/api/v2/country,city?apiKey=${API_KEY}`;
 
 function App() {
     const [ip, setIp] = useState("");
-    const [ipDetails, setIpDetails] = useState({});
+    const {data, error, loading} = UseIp(`${BASE_URL}&ipAddress=${ip}`);
 
-    useEffect(() => {
+    if(loading) return <div>Loading...</div>
 
-      const clientUrl = `${BASE_URL}${ip}`;
-
-        axios
-            .get(clientUrl)
-            .then((res) => {
-                console.log(res.data);
-                setIpDetails(res.data);
-            })
-            .catch((err) => {
-                console.log( 'ERROR -> ', err);
-            });
-    }, []);
+    if(error) return <div>There was an error: {error}</div>
 
     return (
         <div className="App">
@@ -33,7 +23,7 @@ function App() {
                 <h1>IP Address Tracker</h1>
                 <div className="ip-form">
                     <IpForm />
-                    <IpDetails ipDetails={ipDetails} />
+                    {data ?  <IpDetails ipDetails={data} /> : null}         
                 </div>
             </div>
             <div className="bottom-app"></div>

@@ -1,5 +1,5 @@
 $input-radius: 10px;
-$very-dark-ray: hsl(0, 0%, 17%);
+$very-dark-gray: hsl(0, 0%, 17%);
 $dark-gray: hsl(0, 0%, 59%);
 
 form {
@@ -16,6 +16,7 @@ form {
         border-radius: $input-radius 0 0 $input-radius;
         background-color: white;
         width: 100%;
+        color: $very-dark-gray;
     }
 
     button[type="submit"] {

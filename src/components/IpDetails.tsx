@@ -3,7 +3,7 @@ import React from 'react'
 const IpDetails = ({ipDetails}:any) => {
 
     const { ip, location, isp } = ipDetails;
-  return (
+    return (
     <div className='container'>
         <ul>
             <li>
