@@ -27,11 +27,12 @@ Users should be able to:
 - Search for any IP addresses or domains and see the key information and location
 
 ### Screenshot
+![image](https://user-images.githubusercontent.com/72587880/233717781-e3da3c4e-2577-4f22-a0b7-5729098d54fe.png)
 
 ### Links
 
 - Solution URL: [Solution URL](https://github.com/Robertron624/ip-address-tracker)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Add live site URL here](https://effortless-daffodil-a04cfc.netlify.app/)
 
 ## My process
 
