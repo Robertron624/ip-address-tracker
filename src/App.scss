@@ -40,8 +40,10 @@ $dark-gray: hsl(0, 0%, 59%);
 
     @include desktop {
       background-image: url(/pattern-bg-desktop.png);
+      background-size: contain;
       display: flex;
       flex-direction: column;
+      padding: 1.5rem 0 0;
     }
   }
 }

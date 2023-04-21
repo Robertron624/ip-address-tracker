@@ -10,7 +10,7 @@ const API_KEY = import.meta.env.VITE_IPIFY_API_KEY;
 
 const BASE_URL = `https://geo.ipify.org/api/v2/country,city?apiKey=${API_KEY}`;
 
-interface RootObject {
+interface IpDetails {
   ip: string;
   location: Location;
   as: As;
@@ -38,7 +38,7 @@ interface Location {
 
 function App() {
     const [ip, setIp] = useState("");
-    const { data, error, loading } = UseIp(`${BASE_URL}&ipAddress=${ip}`);
+    const { data, error, loading } = UseIp<IpDetails>(`${BASE_URL}&ipAddress=${ip}`);
 
     if (loading) return <div>Loading...</div>;
 

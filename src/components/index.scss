@@ -15,6 +15,7 @@ form {
 
     @include desktop {
         width: 40%;
+        max-width: 26.25rem;
     }
 
     label {
@@ -27,17 +28,26 @@ form {
         background-color: white;
         width: 100%;
         color: $very-dark-gray;
-        padding-left: 1rem;
         font-family: 'Rubik', sans-serif;
+        padding: 0 0 0 1rem;
+
+        &:-webkit-autofill,
+        &:-webkit-autofill:focus
+        {
+            transition: background-color 600000s 0s, color 600000s 0s;
+        }
     }
 
 
     button[type="submit"] {
         border-radius: 0 $input-radius $input-radius 0;
-        padding: 0 .8rem;
+        padding: 0 1rem;
         cursor: pointer;
         background-color: black;
         transition: background-color .5s ease-in-out;
+        display: flex;
+        align-items: center;
+        border: none;
 
         &:hover {
             background-color: $dark-gray;
