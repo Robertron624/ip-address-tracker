@@ -88,6 +88,7 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 - [React Reusable API Calls With Custom Hooks](https://betterprogramming.pub/react-reusable-api-calls-with-custom-hooks-typescript-obviously-a62fda7df1b6) - This helped me to create an easier way to make API calls in React. I'd recommend it to anyone still learning this concept.
 - [react-leaflet documentation](https://react-leaflet.js.org/docs/start-setup/) - This is the official documentation for react-leaflet. I'd recommend it to anyone who wants to learn how to use this library.
+- [Forms and Events](https://react-typescript-cheatsheet.netlify.app/docs/basic/getting-started/forms_and_events/) - This is a good documentation for handling react forms and events with TypeScript. I'd recommend it to anyone who wants to learn how to use this library. 
 
 ## Author
 

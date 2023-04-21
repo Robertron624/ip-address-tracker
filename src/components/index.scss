@@ -2,10 +2,20 @@ $input-radius: 10px;
 $very-dark-gray: hsl(0, 0%, 17%);
 $dark-gray: hsl(0, 0%, 59%);
 
+@mixin desktop {
+    @media (min-width: 768px) {
+        @content;
+    }
+}
+
 form {
 
     display: flex;
     justify-content: center;
+
+    @include desktop {
+        width: 40%;
+    }
 
     label {
         font-size: 0;
@@ -25,11 +35,15 @@ form {
     button[type="submit"] {
         border-radius: 0 $input-radius $input-radius 0;
         padding: 0 .8rem;
+        cursor: pointer;
+        background-color: black;
+        transition: background-color .5s ease-in-out;
+
+        &:hover {
+            background-color: $dark-gray;
+        }
     }
 
-    button {
-        background-color: black;
-    }
 }
 
 .container {
@@ -37,8 +51,13 @@ form {
     padding: 1rem 1rem;
     border-radius: $input-radius;
     position: absolute;
-    z-index: 2;
+    z-index: 2; 
     top: 50%;
+    min-width: 79%;
+
+    @include desktop {
+        min-width: 60%;
+    }
     ul {
         padding: 0;
         list-style: none;
@@ -47,7 +66,37 @@ form {
         gap: 1rem;
         border-radius: $input-radius;
 
+        @include desktop {
+            flex-direction: row;
+            gap: 0;
+        }
+
         li {
+            @include desktop {
+                display: flex;
+                align-items: center;
+                padding-right: 2rem;
+
+                &:nth-child(2)::before,
+                &:nth-child(3)::before,
+                &:nth-child(4)::before
+                {
+                    content: "";
+                    display: block;
+                    width: 1px;
+                    height: 70%;
+                    background-color: $dark-gray;
+                    margin-right: 1rem;
+                }
+
+                .info {
+                    width: 100%;
+                    text-align: left;
+                }
+            }
+
+
+
             span {
                 color: $dark-gray;
                 font-size: .65rem;

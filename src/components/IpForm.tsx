@@ -9,7 +9,6 @@ const IpForm = ({setIp}: any) => {
       ipNumber: { value: string };
     };
     const ip = target.ipNumber.value;
-    console.log("ip to search -> ", ip)
     setIp(ip);
   }
 

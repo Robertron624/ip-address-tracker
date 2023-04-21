@@ -44,8 +44,6 @@ function App() {
 
     if (error) return <div>There was an error: {error}</div>;
 
-    console.log(data)
-
     return (
         <div className="App">
             <div className="top-app">
@@ -66,7 +64,7 @@ function App() {
                             attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                         />
-                        <Marker position={[51.505, -0.09]}>
+                        <Marker position={[data.location.lat, data.location.lng]}>
                             <Popup>
                                 A pretty CSS3 popup. <br /> Easily customizable.
                             </Popup>
