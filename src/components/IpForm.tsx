@@ -9,6 +9,13 @@ const IpForm = ({setIp}: any) => {
       ipNumber: { value: string };
     };
     const ip = target.ipNumber.value;
+
+    const ipRegex = /^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$/;
+    if (!ipRegex.test(ip)) {
+      alert('Please enter a valid IP address');
+      return;
+    }
+
     setIp(ip);
   }
 

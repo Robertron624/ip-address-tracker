@@ -28,9 +28,6 @@ $dark-gray: hsl(0, 0%, 59%);
     font-weight: 700;
     margin-bottom: 1rem;
   }
-
-
-  width: 100vw;
   height: 40rem;
   .top-app {
     background-image: url(/pattern-bg-mobile.png);
@@ -44,6 +41,8 @@ $dark-gray: hsl(0, 0%, 59%);
       display: flex;
       flex-direction: column;
       padding: 1.5rem 0 0;
+      background-size: cover;
+      height: 35%;
     }
   }
 }
