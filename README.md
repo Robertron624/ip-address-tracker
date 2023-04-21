@@ -14,9 +14,6 @@ This is a solution to the [IP address tracker challenge on Frontend Mentor](http
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -82,7 +79,7 @@ export const UseIp = <T,>(ip: string) => {
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+I want to keep working in projects that involve the use of APIs to perfectionate my asynchronous programming skills, I'll be using React for this kind of project and maybe a caching library like ReactQuery.
 
 ### Useful resources
 
@@ -95,7 +92,3 @@ Use this section to outline areas that you want to continue focusing on in futur
 - Personal Website - [Robert Ramirez](https://robert-ramirez.netlify.app)
 - Frontend Mentor User- [@Robertron624](https://www.frontendmentor.io/profile/Robertron624)
 - Twitter - [@robertdowny](https://www.twitter.com/robertdowny)
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
