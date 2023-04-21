@@ -38,7 +38,8 @@ interface Location {
 
 function App() {
     const [ip, setIp] = useState("");
-    const { data, error, loading } = UseIp<IpDetails>(`${BASE_URL}&ipAddress=${ip}`);
+    const [domain, setDomain] = useState("");
+    const { data, error, loading } = UseIp<IpDetails>(`${BASE_URL}&ipAddress=${ip}&domain=${domain}`);
 
     if (loading) return <div>Loading...</div>;
 
@@ -49,7 +50,7 @@ function App() {
             <div className="top-app">
                 <h1>IP Address Tracker</h1>
                 <div className="ip-form">
-                    <IpForm setIp={setIp} />
+                    <IpForm setDomain={setDomain} setIp={setIp} />
                     {data ? <IpDetails ipDetails={data} /> : null}
                 </div>
             </div>
