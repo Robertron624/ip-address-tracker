@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
-import { MapContainer, TileLayer, useMap, Marker, Popup } from "react-leaflet";
+import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
+import L from "leaflet";
 
 import "./App.scss";
 import IpForm from "./components/IpForm";
@@ -9,6 +10,12 @@ import { UseIp } from "./hooks/useIp";
 const API_KEY = import.meta.env.VITE_IPIFY_API_KEY;
 
 const BASE_URL = `https://geo.ipify.org/api/v2/country,city?apiKey=${API_KEY}`;
+
+let locationIcon = L.icon({
+    iconUrl: "/icon-location.svg",
+    iconSize: [40, 50],
+    iconAnchor: [23, 56],
+});
 
 interface IpDetails {
   ip: string;
@@ -65,9 +72,9 @@ function App() {
                             attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                         />
-                        <Marker position={[data.location.lat, data.location.lng]}>
+                        <Marker icon={locationIcon} position={[data.location.lat, data.location.lng]}>
                             <Popup>
-                                A pretty CSS3 popup. <br /> Easily customizable.
+                                <h3>{data.location.city}, {data.location.country}</h3>
                             </Popup>
                         </Marker>
                     </MapContainer>
