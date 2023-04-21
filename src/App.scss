@@ -7,6 +7,12 @@ $dark-gray: hsl(0, 0%, 59%);
     }
 }
 
+@mixin mobile {
+    @media (max-width: 768px) {
+        @content;
+    }
+}
+
 
 #root {
   text-align: center;
@@ -23,6 +29,12 @@ $dark-gray: hsl(0, 0%, 59%);
 }
 
 .App {
+
+
+  @include mobile {
+    width: 100vw;
+  }
+
   h1 {
     font-size: 2rem;
     font-weight: 700;
@@ -31,6 +43,7 @@ $dark-gray: hsl(0, 0%, 59%);
   height: 40rem;
   .top-app {
     background-image: url(/pattern-bg-mobile.png);
+    background-size: cover;
     padding: 1.5rem 1.5rem 0;
     position: relative;
     height: 45%;
